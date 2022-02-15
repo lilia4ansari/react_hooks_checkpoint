@@ -5,24 +5,16 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Rating from '@material-ui/lab/Rating';
+import CardActions from '@mui/material/CardActions';
 
-/*const useStyles = makeStyles({
-  root: {
-    maxWidth: 345,
-  },
-  media: {
-    height: 140,
-  },
-});
-*/
 export default function MovieCard({movie}) {
-   /* const classes = useStyles();*/
+ 
   return (
 
        <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
-        height="140"
+        height="250px"
         image={movie.image}
         alt="green iguana"
       />

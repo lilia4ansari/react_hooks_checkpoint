@@ -1,7 +1,7 @@
 import React from 'react';
-import SearchIcon from '@mui/icons-material/Search';
 import InputBase from '@mui/material/InputBase';
 import { styled, alpha } from '@mui/material/styles';
+import TextField from '@mui/material/TextField';
 
 
 const SearchIconWrapper = styled('div')(({ theme }) => ({
@@ -17,7 +17,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: 'inherit',
   '& .MuiInputBase-input': {
     padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create('width'),
     width: '100%',
@@ -47,20 +46,14 @@ const SearchTexte = ({setSearchTexte}) => {
       width: 'auto',
     },
   })); 
+  
+  return (
 
-  return 
-  <div>
-    <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
-              onChange = {(e)=>setSearchTexte(e.target.value)}
-            />
-          </Search>
-  </div>;
+      <div>
+          <TextField  placeholder="Search…"
+          onChange = {(e)=>setSearchTexte(e.target.value)} />
+      </div>);
+
 };
 
 export default SearchTexte;

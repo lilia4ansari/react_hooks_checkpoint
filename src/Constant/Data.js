@@ -2,7 +2,7 @@ export const moviesData   = [
     {
     id: Math.random(),
     image: "https://th.bing.com/th/id/OIP.yt5syOAZqvExg492HZwKggHaEK?pid=ImgDet&rs=1",
-    rating: 6,
+    rating: 4,
     name: "Les Eternels",
     date: "2022",
     type: "Action Movies",
@@ -11,7 +11,7 @@ export const moviesData   = [
   {
     id: Math.random(),
     image: "https://th.bing.com/th/id/R.96afc772233ddd97ed663f6bff924505?rik=ffWBjehCGFpTBg&pid=ImgRaw&r=0",
-    rating: 7,
+    rating: 2,
     name: "No Time To Die",
     date: "2021",
     type: "Action Movies",
@@ -20,7 +20,7 @@ export const moviesData   = [
    {
     id: Math.random(),
     image: "https://th.bing.com/th/id/OIP.e7FZnsIX3LV5wlMxhET_3gAAAA?pid=ImgDet&rs=1",
-    rating: 7,
+    rating: 4,
     name: " Passengers ",
     date: "2016",
     type: "Romance Movies",
@@ -29,7 +29,7 @@ export const moviesData   = [
     {
     id: Math.random(),
     image: "https://upload.wikimedia.org/wikipedia/en/9/9a/Silver_Linings_Playbook_Poster.jpg",
-    rating: 6,
+    rating: 5,
     name: " Silver Linings Playbook ",
     date: "2012",
     type: "Comidien Movies",
