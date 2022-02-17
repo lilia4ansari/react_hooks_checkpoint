@@ -1,7 +1,7 @@
 import React from 'react';
 import AddMovie from './AddMovie';
 import MovieCard from './MovieCard';
-
+import {Link} from "react-router-dom";
 const MovieList = ({movies, searchTexte, addMovie}) => {
     return (
         <div style={{
@@ -13,9 +13,12 @@ const MovieList = ({movies, searchTexte, addMovie}) => {
             
             {movies
             .map((el,key) => (
-            <MovieCard movie={el}  key={key}/>
+                <div>
+                   <MovieCard movie={el}  key={key}/>
+                   <Link to={`/movie/${el.id}`}>See Details</Link>
+                </div>
             ))}
-            <AddMovie addMovie={addMovie}/>
+            {/*<AddMovie addMovie={addMovie}/>*/}
         </div>
     )
 }
